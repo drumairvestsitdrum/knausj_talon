@@ -13,20 +13,28 @@ mode: all
     user.mouse_sleep()
     speech.disable()
     user.engine_sleep()^
+# key(shift-ctrl-alt-q):
+#     user.switcher_hide_running()
+#     user.history_disable()
+#     user.homophones_hide()
+#     user.help_hide()
+#     user.mouse_sleep()
+#     speech.disable()
+#     user.engine_sleep()
+#     tracking.control1_toggle()
+# ^talon sleep [<phrase>]$:
+#     user.switcher_hide_running()
+#     user.history_disable()
+#     user.homophones_hide()
+#     user.help_hide()
+#     user.mouse_sleep()
+#     speech.disable()
+#     user.engine_sleep()
+#     tracking.control1_toggle()
 key(shift-ctrl-alt-q):
-    user.switcher_hide_running()
-    user.history_disable()
-    user.homophones_hide()
-    user.help_hide()
-    user.mouse_sleep()
     speech.disable()
     user.engine_sleep()
 ^talon sleep [<phrase>]$:
-    user.switcher_hide_running()
-    user.history_disable()
-    user.homophones_hide()
-    user.help_hide()
-    user.mouse_sleep()
     speech.disable()
     user.engine_sleep()
 ^talon speech sleep {[<phrase>]$: speech.disable()
@@ -35,8 +43,10 @@ key(shift-ctrl-alt-q):
     user.mouse_sleep()
 ^talon wake$:
     speech.enable()
-    user.mouse_wake()
+    #user.mouse_wake()
 ^mouse wake$:
     user.mouse_toggle_control_mouse()
+
 key(shift-ctrl-alt-w):
-    user.mouse_toggle_control_mouse()
+    #user.mouse_toggle_control_mouse()
+    tracking.control1_toggle()
