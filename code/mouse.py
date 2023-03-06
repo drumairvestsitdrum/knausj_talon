@@ -290,6 +290,11 @@ def on_pop(active):
 
 
 noise.register("pop", on_pop)
+noise.register("tuh", on_pop)
+noise.register("puh", on_pop)
+noise.register("fuh", on_pop)
+noise.register("kuh", on_pop)
+#noise.register("puh", on_pop)
 
 
 def mouse_scroll(amount):

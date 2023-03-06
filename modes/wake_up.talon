@@ -28,7 +28,7 @@ mode: all
 #     user.homophones_hide()
 #     user.help_hide()
 #     user.mouse_sleep()
-#     speech.disable()
+#     speech.disable()ss
 #     user.engine_sleep()
 #     tracking.control1_toggle()
 key(shift-ctrl-alt-q):
@@ -50,3 +50,6 @@ key(shift-ctrl-alt-q):
 key(shift-ctrl-alt-w):
     #user.mouse_toggle_control_mouse()
     tracking.control1_toggle()
+
+key(shift-ctrl-alt-r):
+    speech.enable()
